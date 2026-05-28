@@ -1,0 +1,24 @@
+<input type="number" id="idade" placeholder="Digite sua idade..">
+
+        <button onclick="verif()">Averiguar</button>
+
+        <p id="resultadoIdade"></p>
+
+        <script>
+            function verif() {
+
+                let idade =
+                    document.getElementById("idade").value;
+
+                if (idade >= 18) {
+
+                    document.getElementById("resultadoIdade").innerText =
+                        "Maior de idade";
+
+                } else {
+
+                    document.getElementById("resultadoIdade").innerText =
+                        "Menor de idade";
+                }
+            }
+        </script>

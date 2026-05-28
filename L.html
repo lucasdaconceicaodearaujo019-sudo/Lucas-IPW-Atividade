@@ -1,0 +1,28 @@
+
+
+        <input type="number" id="nota" placeholder="Digite sua nota..">
+
+        <button onclick="poc()">Verificar</button>
+
+        <p id="result">Resultado</p>
+
+        <script>
+
+            function poc() {
+
+                let nota =
+                    document.getElementById("nota").value;
+
+                if (nota >= 6) {
+
+                    document.getElementById("result").innerText =
+                        "Passou.";
+
+                } else {
+
+                    document.getElementById("result").innerText =
+                        "Não passou.";
+                }
+            }
+
+        </script>
